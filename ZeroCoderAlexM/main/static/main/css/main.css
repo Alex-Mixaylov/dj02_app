@@ -1,0 +1,13 @@
+<style>
+        aside {
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100vh;
+        }
+        main {
+            padding: 20px;
+        }
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+    </style>

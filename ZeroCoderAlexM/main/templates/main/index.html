@@ -1,13 +1,18 @@
-<! doctype html>
-<html Lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Первая страница на django</title>
-</head>
-<body>
-<h1>Урок номер 2 по изучению фреймворка django</h1>
-</body>
-</html>
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Первая страница CatDjango</title>
+{% endblock %}
+
+{% block content%}
+    <!--{% include 'main/nav.html'%}-->
+           <section class="mb-4">
+            <h2>О нас</h2>
+            <p>На CatDjango мы объединяем любовь к кошкам и страсть к веб-разработке с использованием Django. Независимо от того, являетесь ли вы разработчиком или любителем кошек, здесь найдется что-то интересное для каждого!</p>
+        </section>
+
+        <section class="mb-4">
+            <h2>Наша миссия</h2>
+            <p>Мы стремимся создать сообщество, где люди могут делиться любовью к кошкам, обмениваться советами по разработке на Django и сотрудничать в увлекательных проектах.</p>
+        </section>
+{% endblock %}
