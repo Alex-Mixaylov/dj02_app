@@ -1,0 +1,47 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    <title>Новости о Django - Page 2</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Новости о Django</h1>
+
+        <!-- Новость 1 -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                Вышла новая версия Django 4.0!
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Django 4.0: Новые функции и улучшения</h5>
+                <p class="card-text">Команда разработчиков Django выпустила версию 4.0, которая включает в себя множество новых функций, таких как улучшенная поддержка асинхронных задач, новые шаблоны CBV и многое другое. Рекомендуем обновиться как можно скорее!</p>
+                <a href="https://www.djangoproject.com/weblog/2024/aug/09/django-40-released/" class="btn btn-primary" target="_blank">Читать подробнее</a>
+            </div>
+        </div>
+
+        <!-- Новость 2 -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                Новый туториал по Django
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Полный курс по Django от A до Я</h5>
+                <p class="card-text">Научитесь создавать мощные веб-приложения с помощью Django с нуля. В новом курсе от разработчиков вы узнаете все о базовых и продвинутых функциях фреймворка, а также получите ценные советы по лучшим практикам разработки.</p>
+                <a href="https://docs.djangoproject.com/en/4.0/intro/tutorial01/" class="btn btn-success" target="_blank">Начать обучение</a>
+            </div>
+        </div>
+
+        <!-- Новость 3 -->
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                DjangoCon 2024: Регистрация открыта!
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Присоединяйтесь к сообществу на DjangoCon</h5>
+                <p class="card-text">Ежегодная конференция DjangoCon пройдет в этом году в сентябре. Это отличная возможность для разработчиков и энтузиастов Django пообщаться, поделиться опытом и узнать о последних новостях и разработках. Регистрируйтесь сейчас, чтобы не пропустить!</p>
+                <a href="https://2024.djangocon.eu/" class="btn btn-info" target="_blank">Регистрация</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

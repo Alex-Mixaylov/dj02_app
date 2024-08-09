@@ -1,0 +1,44 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Примеры Django - Page 1</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Примеры команд Django</h1>
+
+        <!-- Пример 1 -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                Команда для создания нового проекта Django
+            </div>
+            <div class="card-body">
+                <pre><code class="language-python">django-admin startproject myproject</code></pre>
+                <p>Эта команда создаст новую директорию с именем <code>myproject</code>, содержащую все необходимые файлы для вашего Django проекта.</p>
+            </div>
+        </div>
+
+        <!-- Пример 2 -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                Команда для создания нового приложения в Django
+            </div>
+            <div class="card-body">
+                <pre><code class="language-python">python manage.py startapp myapp</code></pre>
+                <p>Эта команда создаст новое приложение с именем <code>myapp</code> в вашем проекте. Приложения используются для организации кода по функциональным модулям.</p>
+            </div>
+        </div>
+
+        <!-- Пример 3 -->
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                Команда для запуска сервера разработки Django
+            </div>
+            <div class="card-body">
+                <pre><code class="language-python">python manage.py runserver</code></pre>
+                <p>Эта команда запускает встроенный сервер разработки Django, который позволяет вам тестировать и просматривать ваш проект локально по адресу <code>http://127.0.0.1:8000/</code>.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
