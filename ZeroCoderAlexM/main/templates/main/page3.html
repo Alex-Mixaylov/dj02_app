@@ -1,0 +1,56 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Блог о Django - Page 3</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Блог о Django</h1>
+
+        <!-- Пост 1 -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                Основы Django: Начало работы
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Что такое Django и зачем его использовать?</h5>
+                <p class="card-text">Django — это мощный веб-фреймворк на языке Python, который позволяет создавать веб-приложения быстро и с минимальными усилиями. В этом посте мы обсудим основные концепции Django, такие как модели, представления и шаблоны, а также преимущества использования этого фреймворка для разработки современных веб-приложений.</p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
+            </div>
+            <div class="card-footer text-muted">
+                Опубликовано 1 августа 2024 г.
+            </div>
+        </div>
+
+        <!-- Пост 2 -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                Django и REST API: Как создать свой первый API
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Создание REST API с использованием Django Rest Framework</h5>
+                <p class="card-text">В этом посте мы рассмотрим, как использовать Django Rest Framework (DRF) для создания мощных и масштабируемых RESTful API. Мы разберем основные принципы работы с DRF, создадим простое API и обсудим лучшие практики для организации вашего кода.</p>
+                <a href="#" class="btn btn-success">Читать далее</a>
+            </div>
+            <div class="card-footer text-muted">
+                Опубликовано 15 июля 2024 г.
+            </div>
+        </div>
+
+        <!-- Пост 3 -->
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                Советы по безопасности в Django
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Как защитить ваше Django-приложение</h5>
+                <p class="card-text">Безопасность — важный аспект любой веб-разработки. В этом посте мы рассмотрим основные меры безопасности, которые необходимо принять при разработке приложений на Django. Вы узнаете о защите от CSRF-атак, правильной настройке разрешений и других важных аспектах безопасности.</p>
+                <a href="#" class="btn btn-info">Читать далее</a>
+            </div>
+            <div class="card-footer text-muted">
+                Опубликовано 30 июня 2024 г.
+            </div>
+        </div>
+    </div>
+{% endblock %}
