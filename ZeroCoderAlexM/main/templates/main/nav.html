@@ -1,4 +1,14 @@
-<ul>
-    <li><a href="">Главная страница</a></Li>
-    <li><a href="">Вторая страница</a></Li>
-</ul>
+<div class="sidebar-sticky">
+    <div class="navbar-brand d-flex align-items-center">
+        <img src="{% static 'main/img/cat.png' %}" alt="котик на двух лапках" width="50px">
+        <span>CatDjango</span>
+    </div>
+    <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page2' %}">Второстепенная</a>
+        </li>
+    </ul>
+</div>

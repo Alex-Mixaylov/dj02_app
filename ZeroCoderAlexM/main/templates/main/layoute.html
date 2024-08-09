@@ -16,20 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <aside class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <div class="navbar-brand d-flex align-items-center">
-                        <img src="{% static 'main/img/cat.png' %}" alt="котик на двух лапках" width="50px">
-                        <span>CatDjango</span>
-                    </div>
-                    <ul class="nav flex-column mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'page2' %}">Второстепенная</a>
-                        </li>
-                    </ul>
-                </div>
+                {% include 'main/nav.html' %} <!-- полключение меню -->
             </aside>
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 {% block content %}
@@ -37,7 +24,7 @@
             </main>
         </div>
     </div>
-    {% include 'main/footer.html'%}
+    {% include 'main/footer.html' %} <!-- полключение футера -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
