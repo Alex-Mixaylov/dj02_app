@@ -4,17 +4,28 @@
     <title>Первая страница CatDjango</title>
 {% endblock %}
 
-{% block content%}
+{% block content %}
     <!--{% include 'main/nav.html'%}-->
 
-        <section class="mb-4">
-            <h1>Добро пожаловать на сайт {{caption}}!</h1>
-            <h2>О нас</h2>
-            <p>На CatDjango мы объединяем любовь к кошкам и страсть к веб-разработке с использованием Django. Независимо от того, являетесь ли вы разработчиком или любителем кошек, здесь найдется что-то интересное для каждого!</p>
-        </section>
+    <section class="mb-4">
+        <h1>Добро пожаловать на сайт {{caption}}!</h1>
+        <h2>О нас</h2>
+        <p>На CatDjango мы объединяем любовь к кошкам и страсть к веб-разработке с использованием Django. Независимо от того, являетесь ли вы разработчиком или любителем кошек, здесь найдется что-то интересное для каждого!</p>
+    </section>
 
-        <section class="mb-4">
-            <h2>Наша миссия</h2>
-            <p>Мы стремимся создать сообщество, где люди могут делиться любовью к кошкам, обмениваться советами по разработке на Django и сотрудничать в увлекательных проектах.</p>
-        </section>
+    <section class="mb-4">
+        <h2>Наша миссия</h2>
+        <p>Мы стремимся создать сообщество, где люди могут делиться любовью к кошкам, обмениваться советами по разработке на Django и сотрудничать в увлекательных проектах.</p>
+    </section>
+
+    <section class="mb-4">
+        <h2>Присоединяйтесь к нашему сообществу</h2>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="btn btn-outline-info me-2"><i class="bi bi-twitter"></i> Twitter</a>
+            <a href="#" class="btn btn-outline-danger me-2"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="#" class="btn btn-outline-dark"><i class="bi bi-github"></i> GitHub</a>
+        </div>
+    </section>
 {% endblock %}
